@@ -90,16 +90,6 @@ export default function LandingPage() {
             </span>
             <span className="text-xl font-bold tracking-tight text-white">STRIDE</span>
           </div>
-          <div className="flex items-center gap-3">
-            <button
-              type="button"
-              onClick={() => setIsLoginDrawerOpen(true)}
-              className="flex items-center gap-1.5 rounded-full bg-accent-run px-4 py-2 text-xs font-semibold text-accent-run-foreground shadow-md shadow-accent-run/20 transition-all hover:scale-105 active:scale-95 cursor-pointer"
-            >
-              로그인
-              <ArrowRight className="h-3.5 w-3.5" />
-            </button>
-          </div>
         </div>
       </header>
 
