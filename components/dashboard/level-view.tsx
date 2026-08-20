@@ -142,12 +142,19 @@ export function LevelView({
   useEffect(() => {
     let cancelled = false;
     fetch(`/api/level-radar?profileId=${profile.id}`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.json();
+      })
       .then((data: { peerCount: number; peerAverage: RadarProfileStats }) => {
         if (cancelled) return;
         setPeerAverage(data.peerAverage);
         setPeerCount(data.peerCount);
         setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load level radar:", err);
+        if (!cancelled) setLoading(false);
       });
     return () => {
       cancelled = true;

@@ -19,15 +19,17 @@ export default function DashboardPage() {
 
   useEffect(() => {
     fetch("/api/profiles")
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.json();
+      })
       .then((data: DemoProfile[]) => {
         setProfiles(data);
-        // /login에서 프로필을 골라 들어온 경우 그 프로필을 우선한다 —
-        // useSearchParams는 정적 렌더 시 Suspense 경계가 필요해, 이미 전부
-        // 클라이언트에서 fetch하는 이 페이지에서는 window.location으로 읽는
-        // 편이 더 간단하다.
         const requestedId = new URLSearchParams(window.location.search).get("profile");
         setSelectedId((current) => current ?? requestedId ?? data[0]?.id ?? null);
+      })
+      .catch((err) => {
+        console.error("Failed to load profiles:", err);
       });
   }, []);
 
@@ -78,9 +80,16 @@ function ProfileDashboard({ profile }: { profile: DemoProfile }) {
 
   useEffect(() => {
     fetch(`/api/profiles/${profile.id}/activities`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.json();
+      })
       .then((data: ActivityWithPath[]) => {
         setSeedActivities(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load activities:", err);
         setLoading(false);
       });
   }, [profile.id]);
