@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "STRIDE — 나만의 러닝 아트 대시보드",
-  description: "러닝 기록을 아트로 쌓고, 내 수준에 맞는 경로를 추천받는 개인용 러닝 대시보드",
+  title: "Runno — 스마트 러닝 대시보드",
+  description: "러닝 기록을 분석하고, 내 수준에 맞는 경로와 러너맵을 추천받는 개인용 스마트 러닝 대시보드",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

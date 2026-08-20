@@ -42,7 +42,7 @@ export default function DashboardPage() {
               <p className="text-xs font-medium tracking-wide text-accent-run uppercase">
                 Personal Dashboard
               </p>
-              <h1 className="mt-1 text-3xl font-bold tracking-tight text-foreground">STRIDE</h1>
+              <h1 className="mt-1 text-3xl font-bold tracking-tight text-foreground">Runno</h1>
               <p className="mt-1.5 text-sm text-muted-foreground">
                 매일의 러닝이 쌓여 나의 성장이 됩니다.
               </p>

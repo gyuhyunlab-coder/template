@@ -50,7 +50,7 @@ export default function LoginPage() {
             >
               <span className="h-2 w-2 rounded-full bg-accent-run animate-pulse" />
               <span className="text-xs font-semibold tracking-wider text-white uppercase">
-                STRIDE RUNNING
+                RUNNO RUNNING
               </span>
             </Link>
             <h1 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
@@ -83,7 +83,7 @@ export default function LoginPage() {
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  placeholder="runner@stride.run 또는 아이디"
+                  placeholder="runner@runno.run 또는 아이디"
                   className="w-full rounded-xl border border-white/10 bg-white/5 py-3 pl-10 pr-4 text-sm text-white placeholder-zinc-500 transition-all focus:border-accent-run focus:bg-white/10 focus:outline-none focus:ring-1 focus:ring-accent-run"
                 />
               </div>

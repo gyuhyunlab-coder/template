@@ -86,9 +86,9 @@ export default function LandingPage() {
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-2">
             <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-accent-run text-zinc-950 font-black text-base shadow-md shadow-accent-run/20">
-              S
+              R
             </span>
-            <span className="text-xl font-bold tracking-tight text-white">STRIDE</span>
+            <span className="text-xl font-bold tracking-tight text-white">Runno</span>
           </div>
         </div>
       </header>
@@ -123,7 +123,7 @@ export default function LandingPage() {
             </h1>
 
             <p className="max-w-2xl text-base text-zinc-300 sm:text-lg leading-relaxed">
-              STRIDE는 오늘의 추천 경로 제공부터 GPX 정밀 분석, 내 실력 진단 레이더까지
+              Runno는 오늘의 추천 경로 제공부터 GPX 정밀 분석, 내 실력 진단 레이더까지
               러너의 모든 성장을 시각화하는 개인용 스마트 대시보드입니다.
             </p>
 
@@ -214,7 +214,7 @@ export default function LandingPage() {
       {/* 푸터 */}
       <footer className="border-t border-white/10 bg-zinc-950 px-6 py-8 text-center text-xs text-zinc-500">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
-          <p className="font-medium text-zinc-400">STRIDE Running Dashboard</p>
+          <p className="font-medium text-zinc-400">Runno Running Dashboard</p>
           <p>데모 프로필로 즉시 체험 가능하며, 별도의 회원가입 없이 사용할 수 있습니다.</p>
         </div>
       </footer>
@@ -257,9 +257,9 @@ export default function LandingPage() {
               <div className="flex items-center justify-between pb-6 border-b border-white/10">
                 <div className="flex items-center gap-2">
                   <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent-run text-zinc-950 font-black text-xs">
-                    S
+                    R
                   </span>
-                  <span className="text-base font-bold text-white tracking-wider">STRIDE</span>
+                  <span className="text-base font-bold text-white tracking-wider">Runno</span>
                 </div>
                 <button
                   type="button"
@@ -299,7 +299,7 @@ export default function LandingPage() {
                       type="text"
                       value={username}
                       onChange={(e) => setUsername(e.target.value)}
-                      placeholder="runner@stride.run 또는 아무 아이디"
+                      placeholder="runner@runno.run 또는 아무 아이디"
                       className="w-full rounded-xl border border-white/15 bg-white/5 py-3 pl-10 pr-4 text-sm text-white placeholder-zinc-500 transition-all focus:border-accent-run focus:bg-white/10 focus:outline-none focus:ring-1 focus:ring-accent-run"
                     />
                   </div>
@@ -374,7 +374,7 @@ export default function LandingPage() {
             {/* 하단 부가 정보 */}
             <div className="mt-8 border-t border-white/10 pt-4 text-center">
               <p className="text-[11px] text-zinc-500">
-                STRIDE 데모 환경입니다. 입력된 비밀번호는 저장되지 않습니다.
+                Runno 데모 환경입니다. 입력된 비밀번호는 저장되지 않습니다.
               </p>
             </div>
           </div>
