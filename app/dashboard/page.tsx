@@ -24,9 +24,11 @@ export default function DashboardPage() {
         return res.json();
       })
       .then((data: DemoProfile[]) => {
-        setProfiles(data);
-        const requestedId = new URLSearchParams(window.location.search).get("profile");
-        setSelectedId((current) => current ?? requestedId ?? data[0]?.id ?? null);
+        if (Array.isArray(data) && data.length > 0) {
+          setProfiles(data);
+          const requestedId = new URLSearchParams(window.location.search).get("profile");
+          setSelectedId((current) => current ?? requestedId ?? data[0]?.id ?? null);
+        }
       })
       .catch((err) => {
         console.error("Failed to load profiles:", err);
