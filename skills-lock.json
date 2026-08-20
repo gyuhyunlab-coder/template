@@ -31,6 +31,11 @@
       "skillPath": "skills/workflow/explain-visually/SKILL.md",
       "computedHash": "35b45440595c394bfc9742324512c1c91b2235d2a35d7e6da8dc6cafda66add8"
     },
+    "grill-with-docs": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "computedHash": "a610223c9796f755b603f15ec114849a4b38b9ba3006acfa9bdf3cc56dd44dad"
+    },
     "human-review": {
       "source": "toy-crane/skills",
       "sourceType": "github",
@@ -108,6 +113,16 @@
       "sourceType": "github",
       "skillPath": "skills/workflow/tdd/SKILL.md",
       "computedHash": "a2c820cbb37e2150d26cae2f47c435a5348dfada5b7d4bc49456ffde54d9f198"
+    },
+    "to-questionnaire": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "computedHash": "e2cb00bfeb4243f1384bf7e106185ccb69fd7d45ff6a3b04bec4102f505aba31"
+    },
+    "to-spec": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "computedHash": "0ee8caf20fc7df94db53e76f42588fb01eee88c6f8dc97e7a3a0565be8978e74"
     }
   }
 }
